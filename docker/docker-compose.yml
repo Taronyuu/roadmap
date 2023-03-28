@@ -51,17 +51,6 @@ services:
     networks:
       - roadmap
 
-  roadmap-myadmin:
-    image: phpmyadmin
-    container_name: roadmap-myadmin
-    restart: always
-    ports:
-      - 8010:80
-    environment:
-      - PMA_ARBITRARY=1
-    networks:
-      - roadmap
-
 networks:
   roadmap:
     driver: bridge
